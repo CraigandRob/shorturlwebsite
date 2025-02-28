@@ -13,9 +13,9 @@ title: What Do We Have
 </thead>
 <tbody>
   <tr>
-    {% assign sorted_by_title = site.pages | sort:'title' %}
+    {% assign sorted_by_title = site.pages | sort:'permalink' %}
       {% for post in sorted_by_title %}
-        {% unless redirect.from == '/__LINKWITHSLASH__' %}
+        {% unless post.redirect.from == '/__LINKWITHSLASH__' %}
           {% if post.redirect.from  %} 
             <tr>
                 <td class="tg-0lax">
