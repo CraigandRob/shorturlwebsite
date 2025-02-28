@@ -1,6 +1,6 @@
-cd S:\CraigAndRob\website
-$url = 'https://www.thing.com/whatever'
-$slashtag = '/newlinkylink'
+cd S:\CraigAndRob\shorturlwebsite
+$url = 'https://techtales.fail/host/rob/'
+$slashtag = '/rob'
 $template = Get-Content -Path template.md
 $filepath = "{0}.md" -f $slashtag -replace '/',''
 
