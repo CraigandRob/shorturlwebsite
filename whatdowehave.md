@@ -19,6 +19,10 @@ title: What Do We Have
           {% if post.redirect.from  %} 
             <tr>
                 <td class="tg-0lax">
+                    <a>{{ post.title }}
+                    </a>
+                </td>
+                <td class="tg-0lax">
                     <a href="https://tales.fail{{ post.redirect.from }}">
                         tales.fail{{ post.redirect.from }}
                     </a>
