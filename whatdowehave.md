@@ -15,7 +15,7 @@ title: What Do We Have
   <tr>
     {% assign sorted_by_title = site.pages | sort:'title' %}
       {% for post in sorted_by_title %}
-        {% unless redirect.from == '__LINKWITHSLASH__' %}
+        {% unless redirect.from == '/__LINKWITHSLASH__' %}
           {% if post.redirect.from  %} 
             <tr>
                 <td class="tg-0lax">
