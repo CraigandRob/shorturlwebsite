@@ -13,12 +13,14 @@ title: What Do We Have
 </thead>
 <tbody>
   <tr>
-      {% for post in site.pages %}
+    {% assign sorted_by_title = site.pages | sort:'title' %}
+      {% for post in sorted_by_title %}
+        {% unless post.title == 'template' %}
           {% if post.redirect.from  %} 
             <tr>
                 <td class="tg-0lax">
-                    <a href="https://sqlbits.io{{ post.redirect.from }}">
-                        sqlbits.io{{ post.redirect.from }}
+                    <a href="https://tales.fail{{ post.redirect.from }}">
+                        tales.fail{{ post.redirect.from }}
                     </a>
                 </td>
                 <td class="tg-0lax">
@@ -31,6 +33,7 @@ title: What Do We Have
                 </td>
               </tr>
         {% endif %}
+      {% endunless %}
     {% endfor %}
   </tr>
 </tbody>
