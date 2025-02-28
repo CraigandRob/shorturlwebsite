@@ -1,6 +1,6 @@
 cd S:\CraigAndRob\shorturlwebsite
-$url = 'https://techtales.fail/01/'
-$slashtag = '01'
+$url = 'https://techtales.fail/02/'
+$slashtag = '02'
 $template = Get-Content -Path template.md
 $filepath = "{0}.md" -f $slashtag -replace '/',''
 
