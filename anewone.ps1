@@ -1,6 +1,6 @@
 cd S:\CraigAndRob\shorturlwebsite
-$url = 'https://forms.office.com/e/N6nb46V5Kb'
-$slashtag = 'guest'
+$url = 'https://forms.office.com/Pages/ResponsePage.aspx?id=fiQisb8eUkuzCcKqdDb8a-bHL_OYqXBGizNjWHZVm4BURVgyMVc4QkUxMUpJT1FCRUNERDlUSDFXMC4u'
+$slashtag = 'story'
 $template = Get-Content -Path template.md
 $filepath = "{0}.md" -f $slashtag -replace '/',''
 
