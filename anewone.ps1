@@ -1,6 +1,6 @@
 cd S:\CraigAndRob\shorturlwebsite
-$url = 'https://techtales.fail/02/'
-$slashtag = '02'
+$url = 'https://forms.office.com/e/N6nb46V5Kb'
+$slashtag = 'guest'
 $template = Get-Content -Path template.md
 $filepath = "{0}.md" -f $slashtag -replace '/',''
 
